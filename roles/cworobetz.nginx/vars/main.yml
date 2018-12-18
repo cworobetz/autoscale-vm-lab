@@ -1,0 +1,6 @@
+---
+packages_to_install:
+  - nginx
+
+ports_to_allow:
+  - {port: 80, proto: tcp}
