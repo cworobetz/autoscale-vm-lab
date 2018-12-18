@@ -1,9 +1,0 @@
----
-packages_to_install:
- - ufw
- - aptitude
- - vim
- - tmux
-
-packages_to_install_redhat:
- - vim
