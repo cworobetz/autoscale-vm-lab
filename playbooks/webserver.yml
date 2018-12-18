@@ -1,8 +1,4 @@
 ---
- - name: Install required packages
-   apt:
-     name: "{{ item }}"
-     state: latest
-   become: yes
-   with_items: "{{ packages_to_install }}"
-
+ - hosts: localhost
+   roles:
+    - cworobetz.setup
