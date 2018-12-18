@@ -2,3 +2,4 @@
  - hosts: localhost
    roles:
     - cworobetz.nginx
+    - cworobetz.webserver
