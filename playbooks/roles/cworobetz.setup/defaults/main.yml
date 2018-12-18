@@ -1,0 +1,7 @@
+---
+packages_to_install:
+ - ufw
+ - tmux
+ - bash-completion
+ - aptitude
+ - vim
