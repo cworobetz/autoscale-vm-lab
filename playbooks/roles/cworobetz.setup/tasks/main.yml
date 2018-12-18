@@ -8,17 +8,6 @@
      update_password: always
    become: yes
 
- - name: Set host name
-   hostname:
-     name: "{{ inventory_hostname_short }}"
-   become: yes
-
- - name: Ensure hosts file has new host name in it
-   lineinfile: 
-     name: /etc/hosts
-     line: "127.0.0.1 {{ inventory_hostname_short }}"
-   become: yes
-
  - name: Allow 'sudo' group to have passwordless sudo
    lineinfile:
      dest: /etc/sudoers
