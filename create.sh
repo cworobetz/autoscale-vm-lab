@@ -1,6 +1,5 @@
 #!/bin/bash
-echo "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main" >> /etc/apt/sources.list
 apt update
-apt install ansible -y --allow-unauthenticated
+apt install ansible
 ansible-playbook playbooks/setup.yml
 ansible-playbook playbooks/webserver.yml
