@@ -15,7 +15,7 @@
 
  - name: Ensure hosts file has new host name in it
    lineinfile: 
-     path: /etc/hosts
+     name: /etc/hosts
      line: "127.0.0.1 {{ inventory_hostname_short }}"
    become: yes
 
