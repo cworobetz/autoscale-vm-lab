@@ -1,10 +1,9 @@
 ---
  - name: Install required packages
    apt:
-     name: "{{ item }}"
+     name: "{{ packages_to_install }}"
      state: latest
    become: yes
-   with_items: "{{ packages_to_install }}"
 
  - name: Copy in nginx configuration
    template:
