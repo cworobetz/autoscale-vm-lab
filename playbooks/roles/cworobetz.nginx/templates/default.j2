@@ -4,7 +4,7 @@ server {
 
   root /var/www/default;
   server_name localhost;
-  index index.php index.html;
+  index index.html index.php;
 
   location / {
     try_files $uri $uri/ /index.html;
