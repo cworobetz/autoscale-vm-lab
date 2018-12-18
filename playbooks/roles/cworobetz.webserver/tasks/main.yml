@@ -1,0 +1,8 @@
+---
+ - name: Clone git repository
+   git:
+     dest: /var/www/app
+     repo: ssh://git@gitlab.com/cworobetz/autoscale-vm-lab-web.git
+     update: yes
+     accept_hostkey: yes
+   become: yes

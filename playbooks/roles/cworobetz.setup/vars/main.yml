@@ -4,6 +4,4 @@ packages_to_install:
  - aptitude
  - vim
  - tmux
-
-packages_to_install_redhat:
- - vim
+ - git
