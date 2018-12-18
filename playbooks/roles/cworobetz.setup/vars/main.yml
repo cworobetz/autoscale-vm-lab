@@ -5,3 +5,4 @@ packages_to_install:
  - vim
  - tmux
  - git
+ - php-fpm
